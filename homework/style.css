@@ -1,7 +1,4 @@
-/*Change all text in body*/
-body{
-    font-family: sans-serif;
-}
+
 /*Change text-color for three classes*/
 .p_text, .header1, .header4{
     color: #1f3f68;
@@ -12,6 +9,7 @@ body{
 }
 .header1{
     font-size: 64px;
+    width: 510px;
 }
 .header2{
     font-weight: 500;
@@ -54,6 +52,9 @@ body{
     height: 600px;
 }
 .menu{
+    list-style-position: inside;
+    display: flex;
+    justify-content: space-between;
     border: 2px solid #0f0;
     margin: 1% 0%;
     padding: 10px 0px;
@@ -73,19 +74,19 @@ body{
 .main_parts{
     border: 2px solid #0f0;
     margin: 1% 0%;
-    
+    display: flex;
+    justify-content: space-between;
 }
 .main_date{
     border: 2px solid rgb(109, 109, 230);
     margin: 1% 0%;
     padding: 1.5% 1%;
     height: 300px;
-    width: 30%;
-    display: inline-block;
-    vertical-align: top;  
-}
-.align_center{
-    margin: 1% 1.5%;
+    width: 359px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 .align_right{
     float: right;
@@ -93,49 +94,66 @@ body{
 .last_contant{
     border: 2px solid red;
     margin: 1% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .footer{
     border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 .footer_top{
     border: 2px solid grey;
-    margin: 0% 5%;
     height: 250px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .footer_bottom{
     border: 2px solid #ddd;
-    margin: 0% 5%;
     height: 200px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .copyright{
     border: 2px solid rgb(247, 189, 189);
 }
 .footer_text{
     border: 2px solid purple;
-    margin: 25px 0px;
     height: 200px;
-    width: 30%;
-    float: left;
+    width: 495px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .map{
-    border: 2px solid red;
-    margin: 1% 5%;
+    border: 2px solid rgb(0, 60, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 }
 .form{
     border: 2px solid green;
-    width: 30%;
-    height: 800px;
-    display: inline-block;
-    vertical-align: top; 
-    margin: 1% 15% 1% 1%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 .contact{
     border: 2px solid rgb(33, 8, 121);
-    width: 30%;
-    height: 800px;
-    display: inline-block;
-    vertical-align: top; 
-    margin: 1% 1% 1% 15%;
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 .contant_contact_header{
     border: 2px solid black;
@@ -148,47 +166,71 @@ margin: 1% 5%;
 }
 .contact_text{
     border: 2px solid blue;
-    margin: 5% 10%;
-    padding: 5px;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .main_contact{
     border: 2px solid red;
-    margin: 1% 5%;
-    padding: 1% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .service{
     border: 2px solid rgb(0, 255, 242);
-    margin: 1%;
+    list-style-position: inside;
 }
 .phone{
+    list-style-position: inside;
     border: 2px solid rgb(0, 255, 242);
-    margin: 1%;
 }
 .adress{
     border: 2px solid rgb(0, 255, 242);
-    margin: 1%;
 }
 .img{
     border: 2px solid rgb(0, 255, 242);
-    margin: 1%;
 }
 .button{
     border: 2px solid rgb(0, 255, 242);
-    margin: 3% 1%;
 }
 .message{
     border: 2px solid rgb(0, 255, 242);
-    margin: 3% 1%;
 }
 .mail{
     border: 2px solid rgb(0, 255, 242);
-    margin: 3% 1%;
 }
 .name{
     border: 2px solid rgb(0, 255, 242);
-    margin: 3% 1%;
 }
 .heading_message{
-    border: 2px solid rgb(0, 255, 242);
-    margin: 3% 1%;  
+    border: 2px solid rgb(0, 255, 242); 
 }
+* {
+    margin: 0;
+    padding: 0;
+   }
+   
+   .conteiner_main{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   
+}
+   .big_block{
+      width: 96%;
+   }
+   .p_header{
+       width: 425px;
+   }
+    .photo_card{
+        width: 150px;
+        height: 150px;
+    }
+    .footer_header{
+        width: 340px;
+        text-align: left;
+    }
