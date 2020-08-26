@@ -9,64 +9,104 @@
 </head>
 
 <body>
-    <!-- menu -->
-    <ul>
-        <li><a href="index.html">Main</a></li>
-        <li><a href="contacts.html">Contacts</a></li>
-    </ul>
-    <!-- main part -->
-    <h2 class="header2">Contact&nbsp;Us</h2>
-    <p class="p_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, totam?</p>
-    <img src="img/photo1.png" alt="my_photo">
-    <h4 class="header4">Address</h4>
-    <p class="p_text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-    <h4 class="header4">Phone</h4>
-    <ol>
-        <li>phone number1</li>
-        <li>phone number2</li>
-    </ol>
-    <h4 class="header4">Online service</h4>
-    <ul>
-        <li><a href="http://a9999861.beget.tech" target="_blank">My&nbsp;own website</a></li>
-        <li><a href="mailto:necronaft@mail.ru">Write&nbsp;us to&nbsp;mail</a></li>
-    </ul>
-    <h4 class="header4">Send&nbsp;us message</h4>
-    <form action="#">
-        Full Name <input type="text" placeholder="Ivan Ivanov" class="set"><br>
-        Email <input type="email" placeholder="yourmail@mail.ru" class="set"><br>
-        Message: <br> <textarea cols="40" rows="5" placeholder="Input your message" class="set"></textarea><br>
-        <button type="submit" class="button">Submit</button>
-        <button type="reset" class="button">Reset all</button>
-    </form>
+    <div class="header_contact">
+        <!-- menu -->
+        <div class="menu margin-5">
+            <a href="index.html">Main</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+        <!-- main part -->
+        <div class="contant_contact_header">
+            <div class="contact_text">
+                <h2 class="header2">Contact&nbsp;Us</h2>
+                <p class="p_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, totam?</p>
+            </div>
+        </div>
+    </div>
+    <div class="main_contact">
+        <div class="contact">
+            <div class="img">
+                <img src="img/photo1.png" alt="my_photo">
+            </div>
+            <div class="adress">
+                <h4 class="header4">Address</h4>
+                <p class="p_text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="phone">
+                <h4 class="header4">Phone</h4>
+                <ol>
+                    <li>phone number1</li>
+                    <li>phone number2</li>
+                </ol>
+            </div>
+            <div class="service">
+                <h4 class="header4">Online service</h4>
+                <ul>
+                    <li><a href="http://a9999861.beget.tech" target="_blank">My&nbsp;own website</a></li>
+                    <li><a href="mailto:necronaft@mail.ru">Write&nbsp;us to&nbsp;mail</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="form">
+            <div class="heading_message">
+                <h4 class="header4">Send&nbsp;us message</h4>
+            </div>
+            <form action="#">
+                <div class="name">
+                    Full Name <input type="text" placeholder="Ivan Ivanov" class="set">
+                </div>
+                <div class="mail">
+                    Email <input type="email" placeholder="yourmail@mail.ru" class="set">
+                </div>
+                <div class="message">
+                    Message: <br> <textarea cols="40" rows="5" placeholder="Input your message" class="set"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit" class="button">Submit</button>
+                    <button type="reset" class="button">Reset all</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <!-- map -->
-    <h4 class="header4">The map</h4>
-    <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-        <script>(function () {
-                var setting = { "height": 540, "width": 803, "zoom": 16, "queryString": "Unnamed Road, Зеленая зона, Московская обл., Россия, 111674", "place_id": "ChIJ230KUsXJSkERfNMMv8G1-vw", "satellite": false, "centerCoord": [55.69622985780274, 37.925942850000006], "lang": "ru", "cityUrl": "/russia/rudnevo-338838", "cityAnchorText": "Карта [CITY1], Central Federal District, Россия", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "254337" };
-                var d = document;
-                var s = d.createElement('script');
-                s.src = 'https://1map.com/js/script-for-user.js?embed_id=254337';
-                s.async = true;
-                s.onload = function (e) {
-                    window.OneMap.initMap(setting)
-                };
-                var to = d.getElementsByTagName('script')[0];
-                to.parentNode.insertBefore(s, to);
-            })();</script><a href="https://1map.com/ru/map-embed">1 Map</a>
+    <div class="map">
+        <h4 class="header4">The map</h4>
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+            <script>(function () {
+                    var setting = { "height": 540, "width": 803, "zoom": 16, "queryString": "Unnamed Road, Зеленая зона, Московская обл., Россия, 111674", "place_id": "ChIJ230KUsXJSkERfNMMv8G1-vw", "satellite": false, "centerCoord": [55.69622985780274, 37.925942850000006], "lang": "ru", "cityUrl": "/russia/rudnevo-338838", "cityAnchorText": "Карта [CITY1], Central Federal District, Россия", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "254337" };
+                    var d = document;
+                    var s = d.createElement('script');
+                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=254337';
+                    s.async = true;
+                    s.onload = function (e) {
+                        window.OneMap.initMap(setting)
+                    };
+                    var to = d.getElementsByTagName('script')[0];
+                    to.parentNode.insertBefore(s, to);
+                })();</script><a href="https://1map.com/ru/map-embed">1 Map</a>
+        </div>
     </div>
     <!-- the footer of website -->
-    <footer>
-        <h3 class="header3">My&nbsp;choice</h3>
-        <p class="p_text">I&nbsp;chose to&nbsp;learn the <b>Java</b> programming language</p>
+    <div class="footer">
+        <div class="footer_top">
+            <div class="footer_text">
+                <h3 class="header3">My&nbsp;choice</h3>
+                <p class="p_text">I&nbsp;chose to&nbsp;learn the <b>Java</b> programming language</p>
+            </div>
+        </div>
         <hr>
-        <ul>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>84951733943</li>
-            <li><a href="mailto:necronaft@mail.ru">necronaft@mail.ru</a></li>
-        </ul>
-        <p class="p_text"><i>&copy;All rights reserved<br>(Все права защищены)</i></p>
-    </footer>
+        <div class="footer_bottom">
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>84951733943</li>
+                <li><a href="mailto:necronaft@mail.ru">necronaft@mail.ru</a></li>
+            </ul>
+            <div class="copyright">
+                <p class="p_text"><i>&copy;All rights reserved<br>(Все права защищены)</i></p>
+            </div>
+        </div>
+    </div>
 </body>
 
 
