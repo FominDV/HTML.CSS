@@ -6,10 +6,17 @@
 .p_text{
     font-size: 16px;
     line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
 }
 .header1{
+    margin-bottom: 32px;
+    font-weight: 300;
     font-size: 64px;
-    width: 510px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
 }
 .header2{
     font-weight: 500;
@@ -43,27 +50,45 @@
     text-transform: uppercase;
 }
 .header{
-    border: 2px solid red; 
-    padding: 0% 5%;
-    
+    height: 768px;
+    display: flex;
+    flex-direction: column;
 }
 .content_header{
     border: 2px solid #c412b5; 
     height: 600px;
 }
 .menu{
-    list-style-position: inside;
     display: flex;
     justify-content: space-between;
-    border: 2px solid #0f0;
-    margin: 1% 0%;
-    padding: 10px 0px;
+    list-style-type: none;
+    padding-top: 42px;
 }
-.text_header{
-    border: 2px solid rgb(109, 109, 230); 
-    padding: 2% 2% 2% 0%;
-    width: 45%;
-    margin: 3% 0%;
+.header_botton{
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    text-decoration: none;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    padding: 15px 50px;
+    margin-top: 71px;
+    display: inline-block;
+}
+.top_info{
+    flex-grow: 1;
+    height: 100%;
+    background-image: url(img/illustration.png);
+    background-repeat: no-repeat ;
+    background-position-x: right;
+    background-position-y: 115px;
+}
+.text_header{ 
+    width: 510px;
+    margin-top: 115px;
 }
 .main_content{
     height: 500px;
@@ -131,6 +156,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.top{
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
 }
 .map{
     border: 2px solid rgb(0, 60, 255);
@@ -213,7 +242,6 @@ margin: 1% 5%;
    }
    
    .conteiner_main{
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
    align-items: center;
@@ -221,7 +249,8 @@ margin: 1% 5%;
    
 }
    .big_block{
-      width: 96%;
+      width: 1140px;
+      margin: 0px 113px;
    }
    .p_header{
        width: 425px;
