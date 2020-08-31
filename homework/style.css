@@ -1,5 +1,9 @@
 
 /*Change text-color for three classes*/
+* {
+    margin: 0;
+    padding: 0;
+   }
 .p_text{
     font-size: 16px;
     line-height: 26px;
@@ -385,10 +389,7 @@ margin: 1% 5%;
 .heading_message{
     border: 2px solid rgb(0, 255, 242); 
 }
-* {
-    margin: 0;
-    padding: 0;
-   }
+
    
    .conteiner_main{
        width: 100%;
@@ -402,7 +403,7 @@ margin: 1% 5%;
       max-width: 1366px;
    }
    .p_header{
-       width: 425px;
+       max-width: 425px;
    }
     .footer_header{
         padding-bottom: 32px;
