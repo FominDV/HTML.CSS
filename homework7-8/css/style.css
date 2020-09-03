@@ -18,7 +18,8 @@ body {
 /*<--Шапка сайта-->*/
 
 .header {
-    height: 768px;
+    width: 100%;
+    min-height: 768px;
     background: linear-gradient(0deg,
      #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
@@ -27,6 +28,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    
+    
 }
 
 .top {
@@ -38,10 +41,12 @@ body {
 
 .top-info {
     padding-top: 115px;
+    padding-bottom: 60px;
     flex-grow: 1;
     background-image: url(../img/top__back.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 40%;
 }
 
 .top-heading {
@@ -388,6 +393,88 @@ li {
     }
     .top-info{
         background-position: right 280px;
-        background-size: 44%;
+    }
+    .card-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 32px;
+    }
+    .new-card{
+        margin-bottom: 32px;
+    }
+    .heading{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+}
+@media(max-width: 667px){
+    .top-heading{
+        width: 100%;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .top-text{
+        width: 100%;
+        text-align: center;
+    }
+    .header{
+        min-height: 376px;
+        padding-top: 24px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+    .top-info{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        padding-top: 36px;
+    }
+    .top-button{
+        font-size: 12px;
+        line-height: 26px;
+        text-align: center;
+        padding: 0px 8px;
+    }
+    .what-we-do{
+        padding-top: 48px;
+    }
+    .card-box{
+        padding-top: 32px;
+    }
+    .card{
+        width: 100%;
+    }
+    .new-card{
+        width: 100%;
+    }
+    .heading{
+        width: 100%;
+    }
+    .project_text{
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+    .new_project_text{
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        left: 16px;
+    }
+    .project-parent{
+        flex-direction: column;
+        margin-top: 16px;
+    }
+    .project-item_margin{
+        margin: 0;
+        margin-bottom: 16px;
     }
 }
