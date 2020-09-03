@@ -46,7 +46,7 @@ body {
     background-image: url(../img/top__back.png);
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 40%;
+    background-size: 44%;
 }
 
 .top-heading {
@@ -274,8 +274,9 @@ body {
 
 .col-1-2 {
     width: 316px;
-    padding-left: 19px;
     padding-right: 32px;
+    flex-grow: 1;
+    max-width: 250px;
 }
 
 .footer-copy {
@@ -294,6 +295,7 @@ body {
 .top-contacts {
     text-align: center;
     margin-bottom: 40px;
+    background-image: url(../img/MaskGroup.svg);
 }
 
 .contact {
@@ -385,8 +387,15 @@ li {
 .medium-content {
     display: flex;
 }
-
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 @media(max-width: 1024px){
+    .top{
+        padding-top: 52px;
+    }
     .container{
         padding-left:32px;
         padding-right: 32px;
@@ -404,13 +413,58 @@ li {
     .new-card{
         margin-bottom: 32px;
     }
+    .project{
+        margin-bottom: 109px;
+    }
     .heading{
         font-size: 24px;
         line-height: 28px;
     }
+    .footer-top{
+        padding-bottom: 64px;
+        padding-left: 124px;
+        padding-right: 124px;
+    }
+    .footer-box{
+        max-width: 366px;
+        padding-top: 47px;
+        padding-right: 50px;
+    }
+    .footer-head{
+        width: 100%;
+    }
+    .footer-button{
+        width: 133px;
+        height: 18px;
+        padding: 0;
+        padding-bottom: 11px;
+        text-align: center;
+    }
+    .footer-bot{
+        padding-left: 124px;
+        padding-right: 124px;
+    }
+    .footer-bot-address{
+        padding-top: 64px;
+        flex-direction: column;
+    }
     
+    .footer-text2{
+        padding-left: 36px;
+        padding-right: 0px;
+        width: 100%;
+    }
+    .footer-row{
+        padding-bottom: 32px;
+    }
+    .footer-copy{
+        padding-top: 32px;
+    }
 }
 @media(max-width: 667px){
+    .top{
+        padding-top: 0px;
+    }
     .top-heading{
         width: 100%;
         font-size: 32px;
@@ -435,8 +489,10 @@ li {
         align-items: center;
         background-image: none;
         padding-top: 36px;
+        padding-bottom: 0px;
     }
     .top-button{
+        margin-top: 32px;
         font-size: 12px;
         line-height: 26px;
         text-align: center;
@@ -476,5 +532,57 @@ li {
     .project-item_margin{
         margin: 0;
         margin-bottom: 16px;
+    }
+    .footer-head{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .col-1-2{
+        line-height: 19px;
+    }
+    .footer-bot{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .footer-top{
+        flex-direction: column;
+        padding-bottom: 41px;
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center;
+    }
+    .container{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .footer-box{
+        padding-top: 18px;
+        padding-right: 0px;
+    }
+    .footer-head{
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .footer-text{
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .project{
+        margin-bottom: 64px;
+    }
+    .footer-parent{
+        padding-top: 40px;
+    }
+    .footer-bot-address{
+        padding-top: 32px;
+    }
+    .footer-copy{
+        padding-top: 15px;
+        padding-bottom: 32px;
+    }
+    .footer-row{
+        padding-bottom: 17px;
     }
 }
