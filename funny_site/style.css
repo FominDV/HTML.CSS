@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: 100vh;
+    font-family: sans-serif;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.heading-1 {
+    font-size: 64px;
+}
+
+.heading-3 {
+    font-size: 36px;
+}
+
+.heading-4 {
+    font-size: 20px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.header {
+    padding-top: 40px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top {
+    height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.top__box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.top__content {
+    padding-top: 115px;
+    background-image: url("./images/top_img.png");
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.top__heading {
+    max-width: 505px;
+    color: #1F3F68;
+    font-weight: 300;
+    line-height: 74px;
+    margin-bottom: 32px;
+}
+
+.top__text {
+    max-width: 425px;
+    margin-bottom: 45px;
+}
+
+.top__btn {
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 15px 50px;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.what-we-do {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.what-we-do__heading {
+    text-align: center;
+    color: #000000;
+    font-weight: 300;
+    line-height: 46px;
+    padding-top: 64px;
+}
+
+.card-box {
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 359px;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 43px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__img {
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+.card__heading {
+    color: #1F3F68;
+    line-height: 30px;
+    align-self: center;
+    margin-bottom: 14px;
+}
+
+.card__link {
+    color: #5A98D0;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.project {
+    padding-bottom: 112px;
+}
+
+.project__heading {
+    text-align: center;
+    font-weight: 300;
+    line-height: 46px;
+    color: #000000;
+}
+
+.project__info {
+    color: #222222;
+    opacity: 1;
+    width: 75%;
+    margin: 32px auto 64px;
+    text-align: center;
+}
+
+.project__item {
+    position: relative;
+    flex-grow: 1;
+}
+
+.project__link {
+    text-decoration: none;
+}
+
+.project__img {
+    width: 100%;
+}
+
+.project__parent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+ }
+
+ .project__item_margin {
+     margin-right: 32px;
+ }
+
+ .project__text {
+    color: #FFFFFF;
+    line-height: 46px;
+    position: absolute;
+ }
+
+ .project__text_large-project {
+    font-size: 32px;
+    top: 64px;
+    right: 64px;
+ }
+
+.project__text_small-project {
+    font-size: 28px;
+    top: 32px;
+    left: 32px;
+}
+
+.footer {
+    background: #316099;
+    padding: 90px 0 65px
+}
+
+.footer__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 96px;
+}
+
+.footer__heading {
+    color: #FFFFFF;
+    max-width: 340px;
+    margin-bottom: 32px;
+}
+
+.footer__text {
+    color: #FFFFFF;
+    max-width: 495px;
+}
+
+.footer__btn {
+    background: #5A98D0;
+    padding: 15px 80px;
+    color: #FFFFFF;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.footer__border-line {
+    height: 1px;
+    width: 100%;
+    background-color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.footer__contacts {
+    color: #FFFFFF;
+    opacity: 1;
+    list-style-type: none;
+    display: flex;
+    padding: 64px 0;
+}
+
+.contacts__item {
+    flex-grow: 1;
+    flex-basis: 33.3333%;
+}
+
+.contacts__icon {
+    margin-right: 20px;
+}
+
+.rights {
+    color: #FFFFFF;
+    opacity: 0.4;
+}

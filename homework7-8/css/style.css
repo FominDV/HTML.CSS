@@ -292,34 +292,124 @@ body {
 
 /*<--Стили страницы "Контакты"-->*/
 
+.container{
+    padding-left: 110px;
+    padding-right: 110px;
+}
+.top-contacts-menu{
+    
+    display: flex;
+    justify-content: space-between;
+    padding-top: 37px;
+    padding-bottom: 54px;
+}
+
+
 .top-contacts {
+    width: 100%;
+    min-height: 250px;
     text-align: center;
-    margin-bottom: 40px;
-    background-image: url(../img/MaskGroup.svg);
+    background: url(../img/MaskGroup.svg) center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
 }
 
-.contact {
-    font-weight: 500px;
+.contact-text {
+    font-weight: 500;
     font-size: 44px;
+    line-height: 74px;
     text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding-top: 51px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+}
+.text-contact-hd{
+    max-width: 780px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 50px;
+}
+.data{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    padding-bottom: 24px;
+}
+.opacity{
+    opacity: 0.6;
+    width: 300px;
+}
+.phones{
+    display: flex;
+    flex-direction: column;
+}
+.group-head{
+    padding-bottom: 48px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    
 }
 
+.text-us{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+.text-link-contact{
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    text-decoration: none;
+}
 .forma {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.2;
     border-radius: 10px;
-    opacity: 0.6;
     height: auto;
     max-width: 200px;
+    padding-bottom: 32px;
 }
 
+.forma-1{
+    padding: 21px 36px;
+    max-width: 428px;
+    height: 72px;
+    box-sizing: border-box;
+}
 .new-forma {
+    padding: 21px 36px;
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
-    height: 150px;
-    max-width: 200px;
+    height: 144px;
+    max-width: 428px;
+
 }
 
 .knopka {
+    width: 428px;
+    height: 72px;
     background: #5A98D0;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
@@ -327,19 +417,23 @@ body {
     font-size: 16px;
     line-height: 26px;
     text-align: center;
+    letter-spacing: 0.04em;
     color: #FFFFFF;
-    text-transform: uppercase;
-    display: inline-block;
+    margin-top: 2px;
 }
 
 .meme {
     max-width: 300px;
+    padding-bottom: 56px;
 }
 
 .nav-address {
-    margin-top: 20px;
-    padding: 0 0 20px 20px;
+    max-width: 300px;
+    padding: 56px;
+    padding-top: 86px;
+    
     flex-grow: 1;
+    
 }
 
 .group-address {
@@ -347,22 +441,30 @@ body {
 }
 
 .l-height {
-    padding-bottom: 10px;
+    padding-bottom: 40px;
 }
-
+.li{
+    padding-bottom: 16px;
+}
 .container-form {
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
+    background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
     flex-grow: 1;
     line-height: 2;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 56px;
+    max-width: 428px;
 }
-
+.map{
+    flex-grow: 1;
+    width: 940px;
+    padding: 96px 0px 112px 0px;
+}
 .maps {
-    margin: 20px auto;
+    margin: 0 auto;
     height: auto;
     width: 100%;
 }
@@ -370,14 +472,33 @@ body {
 .heading-contacts {
     border: 1px solid blue;
 }
-
-.medium-content {
+.content-contact{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.medium-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-grow: 1;
+}
+.group-1{
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+}
 .group-1-2 {
+    padding-bottom: 8px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
     display: inline-block;
-    width: 80px;
 }
 
 li {
@@ -385,6 +506,7 @@ li {
 }
 
 .medium-content {
+    max-width: 940px;
     display: flex;
 }
 .footer-row{

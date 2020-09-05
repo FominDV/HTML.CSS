@@ -7,101 +7,99 @@
     <title>contacts</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
-    <div class="header-contacts">
+    <div class="container">
+        <ul class="top-contacts-menu">
+            <li><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
+            <li><a href="contacts.html"><img src="img/contacts.svg" alt="contacts"></a></li>
+        </ul>
+    </div>
+    <div class="top-contacts">
+        <h2 class="contact-text">Contact Us</h2>
+        <p class="text-contact-hd"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="content-contact">
+        <div class="medium-content contain">
 
-        <div class="container">
-            <ul class="top">
-                <li><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
-                <li><a href="contacts.html"><img src="img/contacts.svg" alt="contacts"></a></li>
-            </ul>
+            <div class="nav-address">
 
-            <div class="top-contacts">
-                <h2 class="contact">Contact Us</h2>
-                <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.</p>
+                <img class="meme" src="img/Group.svg" alt="like a sir meme">
+
+                <div class="group-address l-height">
+                    <h4 class="data">Address</h4>
+
+                    <p class="text-us l-height opacity">Id convallis placerat sit sed duis id amet volutpat quam a,
+                        pharetra.</p>
+
+                    <h4 class="data">Phone</h4>
+
+                    <ul class="l-height phones">
+                        <li class="fa fa-phone text-us li"> +7 (999)888-77-66</li>
+                        <li class="fa fa-phone text-us"> +7 (888)777-66-55</li>
+                    </ul>
+
+                    <h4 class="data">Online service</h4>
+
+                    <ul class="l-height">
+                        <li><a href="index.html" class="fa fa-home text-link-contact li"> www.site.com</a></li>
+                        <li><a href="mailto:test@domain.local" class="fa fa-envelope text-link-contact">
+                                hello.site@gmail.com</a></li>
+                    </ul>
+                </div>
+
             </div>
 
-        </div>
-    </div>
+            <div class="container-form">
 
-    <div class="medium-content container">
+                <h4 class="group-head">Send us message</h4>
 
-        <div class="nav-address">
+                <form action="#" method="POST" class="form">
 
-            <img class="meme" src="img/sir.png" alt="like a sir meme">
+                    <div class="group-1">
+                        <span class="group-1-2">Full Name:</span>
+                        <input class="forma forma-1" type="text" placeholder="Your Name">
+                    </div>
 
-            <div class="group-address">
-                <h4 class="data">Address</h4>
+                    <div class="group-1">
+                        <span class="group-1-2">Email:</span>
+                        <input class="forma forma-1" type="email" placeholder="Your Email">
+                    </div>
 
-                <p class="text l-height"> Baker street, 221b</p>
+                    <div class="group-1">
+                        <span class="group-1-2">Message:</span>
+                        <textarea class="forma new-forma" placeholder="Enter your message"></textarea>
+                    </div>
 
-                <h4 class="data">Phone</h4>
+                    <button class="knopka" type="submit">SUBMIT</button>
 
-                <ul class="l-height">
-                    <li>+7 (999)888-77-66</li>
-                    <li>+7 (888)777-66-55</li>
-                </ul>
+                </form>
 
-                <h4 class="data">Online service</h4>
-
-                <ul class="l-height">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="mailto:test@domain.local">mail@mail.ru</a></li>
-                </ul>
             </div>
-
         </div>
-
-        <div class="container-form">
-
-            <h4 class="data group-1">Send us message</h4>
-
-            <form action="#" method="POST">
-
-                <div class="group-1">
-                    <span class="group-1-2">Full Name:</span>
-                    <input class="forma" type="text" placeholder="Ваше Имя">
-                </div>
-
-                <div class="group-1">
-                    <span class="group-1-2">Email:</span>
-                    <input class="forma" type="email" placeholder="e-mail">
-                </div>
-
-                <div class="group-1">
-                    <span class="group-1-2">Message:</span>
-                    <input class="forma new-forma" type="textarea" placeholder="Enter your message">
-                </div>
-
-                <button class="knopka" type="submit">Отправить</button>
-
-            </form>
-
+        <div class="map">
+            <div class="maps" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                <script>(function () {
+                        var setting = { "height": 540, "max-width": 1024, "zoom": 17, "queryString": "221B Бейкер-стрит, Лондон, Великобритания", "place_id": "ChIJEYJiM88adkgR4SKDqHd2XUQ", "satellite": false, "centerCoord": [51.52379136998128, -0.15842130000000232], "cid": "0x445d7677a88322e1", "lang": "ru", "cityUrl": "/uk/london", "cityAnchorText": "Карта [CITY1], Англия, Великобритания", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "254760" };
+                        var d = document;
+                        var s = d.createElement('script');
+                        s.src = 'https://1map.com/js/script-for-user.js?embed_id=254760';
+                        s.async = true;
+                        s.onload = function (e) {
+                            window.OneMap.initMap(setting)
+                        };
+                        var to = d.getElementsByTagName('script')[0];
+                        to.parentNode.insertBefore(s, to);
+                    })();</script><a href="https://1map.com/ru/map-embed">1 Map</a>
+            </div>
         </div>
     </div>
-
-    <div class="maps" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-        <script>(function () {
-                var setting = { "height": 540, "max-width": 1024, "zoom": 17, "queryString": "221B Бейкер-стрит, Лондон, Великобритания", "place_id": "ChIJEYJiM88adkgR4SKDqHd2XUQ", "satellite": false, "centerCoord": [51.52379136998128, -0.15842130000000232], "cid": "0x445d7677a88322e1", "lang": "ru", "cityUrl": "/uk/london", "cityAnchorText": "Карта [CITY1], Англия, Великобритания", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "254760" };
-                var d = document;
-                var s = d.createElement('script');
-                s.src = 'https://1map.com/js/script-for-user.js?embed_id=254760';
-                s.async = true;
-                s.onload = function (e) {
-                    window.OneMap.initMap(setting)
-                };
-                var to = d.getElementsByTagName('script')[0];
-                to.parentNode.insertBefore(s, to);
-            })();</script><a href="https://1map.com/ru/map-embed">1 Map</a>
-    </div>
-
-
 
     <div class="footer">
 
