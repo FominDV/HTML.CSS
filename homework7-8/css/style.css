@@ -274,6 +274,7 @@ body {
 
 .col-1-2 {
     width: 316px;
+    padding-left: 19px;
     padding-right: 32px;
     flex-grow: 1;
     max-width: 250px;
@@ -511,10 +512,12 @@ li {
 }
 .footer-row{
     display: flex;
-    justify-content: space-between;
     width: 100%;
 }
 @media(max-width: 1024px){
+    .col-1-2{
+        min-width: 455px;
+    }
     .top{
         padding-top: 52px;
     }
@@ -660,6 +663,8 @@ li {
         line-height: 28px;
     }
     .col-1-2{
+        max-width: 667px;
+        min-width: 0px;
         line-height: 19px;
     }
     .footer-bot{
@@ -701,6 +706,7 @@ li {
         padding-top: 32px;
     }
     .footer-copy{
+        text-align: center;
         padding-top: 15px;
         padding-bottom: 32px;
     }
